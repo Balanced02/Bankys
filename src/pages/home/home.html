@@ -3,16 +3,42 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title class="yellowBtn">Bankys Private School</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content padding class="homeBody">
+  <div class="logo"></div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <ion-card>
+    <ion-card-content>
+      <p class="centered"><strong> App developed </strong> by students of Bankys Private School, Abuja</p>
+    </ion-card-content>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  </ion-card>
+
+  <ion-slides pager class="homeSlide">
+
+    <ion-slide style="background-color: green" class="slide1">
+    </ion-slide>
+
+    <ion-slide style="background-color: blue" class="slide2">
+    </ion-slide>
+
+    <ion-slide style="background-color: red" class="slide3">
+    </ion-slide>
+
+  </ion-slides>
+  <div class="btnDiv">
+    <button ion-button class="homeBtn purpleBtn">About Us</button>
+    <button ion-button class="homeBtn yellowBtn" (click)="pageNavigate('AdmissionPage')">Admission</button>
+  </div>
+  <div class="btnDiv">
+    <button ion-button class="homeBtn greenBtn" (click)="pageNavigate('CareersPage')">Career</button>
+    <button ion-button class="homeBtn purpleBtn" (click)="pageNavigate('ElearningPage')">E-Learning</button>
+  </div>
+  <div class="btnDiv">
+    <button ion-button class="homeBtn yellowBtn" (click)="pageNavigate('ContactPage')">Contact Us</button>
+    <button ion-button class="homeBtn greenBtn">What's New?</button>
+  </div>
 </ion-content>

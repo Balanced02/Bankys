@@ -14,3 +14,88 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.menuImg {
+    background-image: url('../assets/imgs/menuImg.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20%;
+    background-position: center;
+    margin: auto;
+}
+
+.menuColor {
+  background-color: #ff9933
+}
+
+.logo {
+  background-image: url('../../assets/imgs/bankys.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20%;
+  background-position: center;
+  margin: auto;
+}
+
+.centered {
+  text-align: center
+}
+
+.homeSlide {
+  height: 50%;
+}
+
+.slide1 {
+  background-image: url('../../assets/imgs/slide1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.slide2 {
+  background-image: url('../../assets/imgs/slide2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.slide3 {
+  background-image: url('../../assets/imgs/slide3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.homeBtn {
+  width: 50%;
+  display: inline;
+}
+
+.purpleBtn {
+  background-color: #886AEA;  
+}
+
+.yellowBtn {
+  background-color: #FFC900;
+}
+
+.greenBtn {
+  background-color: #33CD5F
+}
+
+.btnDiv {
+  display: flex;
+  margin-top: 10px;
+  align-items: center
+}
+
+.homeBody {
+  background-color: #FFF4CA;
+}
+
+.justify {
+  text-align: justify;
+}

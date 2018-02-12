@@ -5,6 +5,13 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { AcademicsPage } from '../pages/academics/academics';
+import { AdmissionsPage } from '../pages/admissions/admissions';
+import { ElearningPage } from '../pages/elearning/elearning'
+import { ContactPage } from '../pages/contact/contact'
+import { CareersPage } from '../pages/careers/careers'
+import { TestimonialsPage } from '../pages/testimonials/testimonials'
+import { GalleryPage } from '../pages/gallery/gallery'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,7 +20,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    AcademicsPage,
+    AdmissionsPage,
+    ElearningPage,
+    ContactPage,
+    CareersPage,
+    TestimonialsPage,
+    GalleryPage
   ],
   imports: [
     BrowserModule,
@@ -23,12 +37,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    AcademicsPage,
+    AdmissionsPage,
+    ElearningPage,
+    ContactPage,
+    CareersPage,
+    TestimonialsPage,
+    GalleryPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }

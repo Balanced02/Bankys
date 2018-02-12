@@ -5,6 +5,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { AcademicsPage } from "../pages/academics/academics";
+import { AdmissionsPage } from '../pages/admissions/admissions';
+import { ElearningPage } from '../pages/elearning/elearning'
+import { ContactPage } from '../pages/contact/contact'
+import { CareersPage } from '../pages/careers/careers'
+import { TestimonialsPage } from '../pages/testimonials/testimonials'
+import { GalleryPage } from '../pages/gallery/gallery'
 
 @Component({
   templateUrl: 'app.html'
@@ -14,7 +21,7 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
@@ -22,7 +29,14 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Academics', component: AcademicsPage },
+      { title: 'Admissions', component: AdmissionsPage },
+      { title: 'E-Learning', component: ElearningPage },
+      { title: 'Extra-Curricular', component: ListPage },
+      { title: 'Contact Us', component: ContactPage },
+      { title: 'Careers', component: CareersPage },
+      { title: 'Gallery', component: GalleryPage },
+      { title: 'Testimonials', component: TestimonialsPage }
     ];
 
   }
