@@ -1,0 +1,8 @@
+{
+  "name": "Bankys",
+  "app_id": "d6ae1bc7",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
